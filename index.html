@@ -650,9 +650,10 @@
             // DISABLE BACKEND FOR FRONTEND DEMO
             // YOU CAN USE YOUR OWN REQUESTS TO YOUR OWN BACKEND
             // CHANGE THIS CODE TO YOUR OWN
-            return onCallback && onCallback({error: 'This function (' + method + ') should send requests to your backend. Please, change this code to your own.'});
-
+            //return onCallback && onCallback({error: 'This function (' + method + ') should send requests to your backend. Please, change this code to your own.'});
+            console.log("!!! apiRequest", method, data)
             const authData = DemoApp.initData || '';
+            console.log("!!! apiRequest",authData)
             const web_app_URL_overhead = "https://script.google.com/macros/s/AKfycbwtkRnqhU-ty6aBXGIgYyeVhr6vMPVFVIjyBJMADUilqcvD4cF2eM-fPX_B6Ld_BXkyww/exec"
             fetch(web_app_URL_overhead, {
                 method: 'POST',
