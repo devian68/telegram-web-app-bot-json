@@ -653,6 +653,8 @@
             return onCallback && onCallback({error: 'This function (' + method + ') should send requests to your backend. Please, change this code to your own.'});
 
             const authData = DemoApp.initData || '';
+            Telegram.WebApp.sendData(data);
+            
             fetch('/demo/api', {
                 method: 'POST',
                 body: JSON.stringify(Object.assign(data, {
