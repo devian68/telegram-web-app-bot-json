@@ -650,10 +650,15 @@
             // DISABLE BACKEND FOR FRONTEND DEMO
             // YOU CAN USE YOUR OWN REQUESTS TO YOUR OWN BACKEND
             // CHANGE THIS CODE TO YOUR OWN
+            
+            
+            Telegram.WebApp.sendData("ZZZZZZZZZZZZZZZ");
+            
+            
             return onCallback && onCallback({error: 'This function (' + method + ') should send requests to your backend. Please, change this code to your own.'});
 
             const authData = DemoApp.initData || '';
-            Telegram.WebApp.sendData("ZZZZZZZZZZZZZZZ");
+
             
             fetch('/demo/api', {
                 method: 'POST',
