@@ -532,11 +532,9 @@
             }
         },
         sendTime(spam) {
-            console.log("SENT???")
-            const repeat = spam ? 10 : 1;
-            for (let i = 0; i < repeat; i++) {
-                Telegram.WebApp.sendData(new Date().toString());
-                console.log("SENT!!!")
+            console.log("sendMessage2 ???")
+            Telegram.WebApp.sendData(spam);
+            console.log("sendMessage2 SENT!!!")
             }
         },
         
